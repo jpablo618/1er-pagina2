@@ -1,0 +1,79 @@
+:root {
+    --fondo-principal: rgb(11, 117, 131); /* Color de fondo principal */
+    --fondo-Inicio: #f9f9f9; /* Fondo de la sección de inicio */
+    --fondo-Teoria: #e0f7fa; /* Fondo de la sección 'Acerca de' */
+    --fondo-Psicologia: #d3cbcb; /* Fondo de la sección 'Contacto' */
+    --color-nav: #333; /* Color de fondo de la barra de navegación */
+    --color-nav-hover: #575757; /* Color de fondo cuando se pasa el ratón sobre la navegación */
+    --fondo-Rgb: #f9f9f9;
+}
+body{
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--fondo-principal); /* Usamos la variable para el fondo */
+}
+
+nav {
+    width: 100%;
+    background-color: var(--color-nav); /* Fondo de la barra de navegación */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--color-nav-hover); /* Fondo de la barra de navegación al pasar el ratón */
+}
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Secciones */
+.section {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Ocultar secciones por defecto */
+}
+
+/* Estilo de las secciones activas */
+.section:target {
+    display: block; /* Solo muestra la sección cuando es el objetivo */
+}
+
+#Inicio {
+    background-color: var(--fondo-Inicio); /* Usamos la variable para la sección de inicio */
+}
+
+#Teoria {
+    background-color: var(--fondo-Teoria); /* Usamos la variable para la sección 'Acerca de' */
+}
+
+#Psicologia {
+    background-color: var(--fondo-Psicologia); /* Usamos la variable para la sección 'Contacto' */
+}
+#Rgb {
+    background-color: var(--fondo-Rgb); /* Usamos la variable para la sección 'Contacto' */
+}
